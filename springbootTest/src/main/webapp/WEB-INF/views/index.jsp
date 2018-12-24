@@ -15,6 +15,20 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <script type="text/javascript" src="<%=basePath %>js/jquery.min.js"></script>
 <script type="text/javascript" src="<%=basePath %>js/Test.js"></script>
 </head>
+<script type="text/javascript">
+function  show(){
+	var  list  =[];   //声明的是数组
+	var  b  ={};      //声明的是对象
+	b.name='yuntao';  //属性
+	b.id=1;           //属性
+	list.push(b);     //把对象添加到数组中
+	
+	//转换
+	var  json =JSONObject.stringfiy(list);
+	alert(json);
+}
+
+</script>
 <body>
   <form action="#">
   	<select name="selects">
@@ -33,6 +47,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   	      <p>t</p>
   	   </c:otherwise>
   	</c:choose>
+  	<input type="button" onclick="show()" value="提交">
   </form>
 </body>
 </html>
