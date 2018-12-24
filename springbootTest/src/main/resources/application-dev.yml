@@ -1,0 +1,28 @@
+#试图解析配置
+spring:
+  #jsp
+  mvc:
+     view:
+       suffix: .jsp
+       prefix:  /WEB-INF/views/
+  #redis
+  redis: 
+   host: 127.0.0.1
+   port: 6379 
+    #mq  配置   
+   activemq:
+     broker-url: tcp://127.0.0.1:61616
+   jms:
+      pub-sub-domain: false
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+#端口号配置     
+server:
+    port: 8080
+#属性注入    
+book: 
+   name: yyy
+   id: 1  
+   
