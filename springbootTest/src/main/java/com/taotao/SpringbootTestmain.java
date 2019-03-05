@@ -9,6 +9,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 //@EnableScheduling    //开启定时任务
 public class SpringbootTestmain {
 	public static void main(String[] args) {
+		System.out.println("ssss");
          SpringApplication.run(SpringbootTestmain.class, args);
 	}
 }
